@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>林知远 | 个人网站</title>
+  <meta name="description" content="林知远的个人网站，展示作品、经历、服务方向与联系方式。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="回到首页">
+      <span class="brand-mark">L</span>
+      <span>林知远</span>
+    </a>
+    <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#about">关于</a>
+      <a href="#services">方向</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-workspace.png" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="kicker">Independent Designer & Builder</p>
+        <h1>把想法做成清晰、有温度、能被真正使用的数字体验。</h1>
+        <p class="hero-copy">我关注产品策略、界面设计和前端实现之间的连接，喜欢把复杂问题整理成让人愿意靠近的作品。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">查看作品</a>
+          <a class="button secondary" href="mailto:hello@example.com">发邮件</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="个人概览">
+        <div>
+          <span class="stat">7+</span>
+          <span>年产品与设计经验</span>
+        </div>
+        <div>
+          <span class="stat">32</span>
+          <span>个上线项目</span>
+        </div>
+        <div>
+          <span class="stat">4</span>
+          <span>个长期合作领域</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-heading">
+        <p class="kicker">About</p>
+        <h2>从模糊需求到可运行产品</h2>
+      </div>
+      <p>你好，我是林知远。这个网站可以换成你的真实姓名、头像、项目和联系方式。当前版本适合设计师、开发者、自由职业者或产品型个人品牌使用，结构完整，后续也方便继续扩展。</p>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading row">
+        <div>
+          <p class="kicker">Selected Work</p>
+          <h2>近期作品</h2>
+        </div>
+        <div class="filters" aria-label="作品筛选">
+          <button class="filter active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="product">产品</button>
+          <button class="filter" type="button" data-filter="brand">品牌</button>
+          <button class="filter" type="button" data-filter="web">网站</button>
+        </div>
+      </div>
+      <div class="work-grid">
+        <article class="work-card" data-category="product">
+          <span>产品设计</span>
+          <h3>城市服务预约平台</h3>
+          <p>重构预约流程、后台状态和移动端表单，让高频操作更快完成。</p>
+        </article>
+        <article class="work-card accent" data-category="web">
+          <span>网站开发</span>
+          <h3>独立咨询品牌官网</h3>
+          <p>从信息架构到响应式前端，建立更可信的首屏和线索转化路径。</p>
+        </article>
+        <article class="work-card dark" data-category="brand">
+          <span>品牌系统</span>
+          <h3>新消费品牌视觉更新</h3>
+          <p>整理色彩、字体、版式与应用组件，让团队能稳定产出内容。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading">
+        <p class="kicker">Focus</p>
+        <h2>我能帮你推进的事</h2>
+      </div>
+      <div class="service-list">
+        <div class="service-item">
+          <strong>产品与信息架构</strong>
+          <span>把目标、用户路径和页面层级整理成可以执行的方案。</span>
+        </div>
+        <div class="service-item">
+          <strong>界面与视觉系统</strong>
+          <span>建立风格稳定、组件清楚、可持续迭代的产品体验。</span>
+        </div>
+        <div class="service-item">
+          <strong>前端落地</strong>
+          <span>将设计转成响应式页面、交互动效和可维护代码。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>有项目、合作或只是想聊聊？</h2>
+      </div>
+      <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 林知远</span>
+    <span>Portfolio / Design / Frontend</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
