@@ -1,0 +1,110 @@
+[
+  {
+    "id": "grandpa",
+    "name": "爷爷",
+    "generation": 1,
+    "role": "长辈",
+    "occupation": "退休教师",
+    "hobbies": ["下棋", "养花", "书法"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=elderly%20Chinese%20man%20with%20silver%20hair%20glasses%20gentle%20smile%20warm%20expression%20portrait%20natural%20lighting%20soft%20background&image_size=square",
+    "parentId": null,
+    "spouseId": "grandma",
+    "description": "今年六十七岁，性格温和沉稳，一辈子待人宽厚，退休前是中学语文老师，满腹书卷气，平日里性子不急不躁，家里大小事都愿意耐心开导晚辈，是全家最受人敬重的长辈。"
+  },
+  {
+    "id": "grandma",
+    "name": "奶奶",
+    "generation": 1,
+    "role": "长辈",
+    "occupation": "退休工人",
+    "hobbies": ["烹饪", "编织", "听戏"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=elderly%20Chinese%20woman%20grey%20hair%20kind%20wrinkles%20grandmother%20smile%20warm%20portrait%20natural%20lighting%20soft%20colors&image_size=square",
+    "parentId": null,
+    "spouseId": "grandpa",
+    "description": "六十五岁，热心善良，一辈子围着家人操劳，手脚勤快心思细腻，邻里街坊都夸她和善，总惦记着小辈爱吃什么，永远把家里打理得干净温馨。"
+  },
+  {
+    "id": "father",
+    "name": "爸爸",
+    "generation": 2,
+    "role": "父亲",
+    "occupation": "工程师",
+    "hobbies": ["运动", "阅读", "摄影"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=middle%20aged%20Chinese%20man%20casual%20sweater%20confident%20smile%20modern%20portrait%20clean%20background%20professional&image_size=square",
+    "parentId": "grandpa",
+    "spouseId": "mother",
+    "description": "四十二岁，踏实有担当，做事认真负责，平日里沉默寡言却行动力十足，十分注重陪伴家人，擅长发现生活里美好的风景，遇事总能冷静妥善解决。"
+  },
+  {
+    "id": "mother",
+    "name": "妈妈",
+    "generation": 2,
+    "role": "母亲",
+    "occupation": "医生",
+    "hobbies": ["烹饪", "旅行", "瑜伽"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20woman%20doctor%20white%20coat%20gentle%20smile%20warm%20eyes%20professional%20portrait%20modern%20healthcare&image_size=square",
+    "parentId": "grandma",
+    "spouseId": "father",
+    "description": "四十岁，温柔乐观，心思细腻共情力强，热爱生活懂得享受美好，闲暇时会规划全家出游，心态年轻，一直坚持锻炼保持好状态。"
+  },
+  {
+    "id": "uncle1",
+    "name": "伯伯",
+    "generation": 2,
+    "role": "伯父",
+    "occupation": "商人",
+    "hobbies": ["钓鱼", "品茶", "收藏"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20business%20man%20suit%20smart%20casual%20friendly%20smile%20portrait%20modern%20professional%20warm&image_size=square",
+    "parentId": "grandpa",
+    "spouseId": null,
+    "description": "四十六岁，性格豪爽大方，待人真诚好客，闲暇总爱约好友相聚，做事稳重有远见，闲暇喜欢独处静心，积攒各类有意思的小藏品。"
+  },
+  {
+    "id": "uncle2",
+    "name": "叔叔",
+    "generation": 2,
+    "role": "叔父",
+    "occupation": "教师",
+    "hobbies": ["书法", "国画", "阅读"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20scholar%20teacher%20traditional%20clothing%20wise%20expression%20bookish%20portrait%20cultural%20elegant&image_size=square",
+    "parentId": "grandpa",
+    "spouseId": null,
+    "description": "三十八岁，文雅内敛，自带文人气质，热爱传统国风艺术，闲暇时常伏案练字作画，安静沉稳，时常和我分享各类好书。"
+  },
+  {
+    "id": "aunt",
+    "name": "姑姑",
+    "generation": 2,
+    "role": "姑母",
+    "occupation": "设计师",
+    "hobbies": ["绘画", "旅行", "摄影"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20female%20designer%20artistic%20creative%20modern%20style%20fashionable%20portrait%20colorful%20artistic&image_size=square",
+    "parentId": "grandpa",
+    "spouseId": null,
+    "description": "三十五岁，活泼开朗，审美出众，向往各地风土人情，擅长捕捉风景与人物画面，乐于带着我们出门游玩开阔眼界。"
+  },
+  {
+    "id": "me",
+    "name": "我",
+    "generation": 3,
+    "role": "子女",
+    "occupation": "初中生",
+    "hobbies": ["编程", "游戏", "篮球"],
+    "avatar": "/image/me.jpg",
+    "parentId": "father",
+    "spouseId": null,
+    "description": "十七岁，思维灵活喜欢钻研新鲜事物，性格开朗外向，动静结合，空闲时间既爱钻研代码，也喜欢约好友出门打球放松。"
+  },
+  {
+    "id": "sister",
+    "name": "妹妹",
+    "generation": 3,
+    "role": "子女",
+    "occupation": "小学生",
+    "hobbies": ["画画", "跳舞", "唱歌"],
+    "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20little%20girl%20primary%20school%20cheerful%20cute%20twin%20tails%20sparkling%20eyes%20happy%20portrait%20bright&image_size=square",
+    "parentId": "father",
+    "spouseId": null,
+    "description": "十岁，活泼灵动，心思浪漫充满想象力，能歌善舞，一拿起画笔就格外专注，经常给家里所有人画可爱的人像画。"
+  }
+]

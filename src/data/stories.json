@@ -1,0 +1,47 @@
+[
+  {
+    "id": "story1",
+    "title": "2024年春节团圆",
+    "date": "2024-02-10",
+    "description": "全家人齐聚一堂，爷爷亲自下厨做了一桌丰盛的年夜饭。我们围坐在一起，分享着过去一年的故事，笑声不断。妹妹表演了她新学的舞蹈，爷爷开心得合不拢嘴。这是我们最难忘的团圆时刻。",
+    "images": [
+      "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20family%20spring%20festival%20reunion%20dinner%20warm%20atmosphere%20traditional%20celebration&image_size=landscape_4_3"
+    ]
+  },
+  {
+    "id": "story2",
+    "title": "暑假海边之旅",
+    "date": "2023-07-15",
+    "description": "一家人去了海边度假，妹妹第一次看到大海，兴奋得在沙滩上奔跑。爸爸教我游泳，妈妈在岸边拍照。傍晚我们一起看日落，海风轻拂，那是我们最美好的夏日记忆。",
+    "images": [
+      "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20family%20beach%20vacation%20summer%20happy%20children%20playing%20sunset&image_size=landscape_4_3"
+    ]
+  },
+  {
+    "id": "story3",
+    "title": "爷爷的生日惊喜",
+    "date": "2023-03-20",
+    "description": "全家人为爷爷准备了生日惊喜，姑姑设计了精美的蛋糕，妈妈准备了丰盛的晚餐。当爷爷走进房间，看到我们为他准备的惊喜，感动得热泪盈眶。他说这是他最幸福的生日。",
+    "images": [
+      "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20elderly%20grandfather%20birthday%20celebration%20family%20surprise%20happy%20moment&image_size=landscape_4_3"
+    ]
+  },
+  {
+    "id": "story4",
+    "title": "中秋赏月",
+    "date": "2023-09-29",
+    "description": "中秋节晚上，全家人在院子里赏月吃月饼。爷爷给我们讲了嫦娥奔月的故事，伯伯带来了他珍藏的好茶。月光下，我们一家人其乐融融，这是最温馨的中秋夜。",
+    "images": [
+      "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20family%20mid%20autumn%20festival%20moon%20viewing%20traditional%20celebration%20warm%20night&image_size=landscape_4_3"
+    ]
+  },
+  {
+    "id": "story5",
+    "title": "家庭运动会",
+    "date": "2022-10-01",
+    "description": "国庆假期，我们在家举办了一场家庭运动会。爸爸和伯伯比赛跑步，姑姑和妈妈比赛跳绳，我和妹妹比赛跳远。爷爷当裁判，虽然年纪大了，但精神矍铄。最后大家都笑得肚子疼。",
+    "images": [
+      "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20family%20sports%20day%20backyard%20happy%20competition%20fun%20activities&image_size=landscape_4_3"
+    ]
+  }
+]
