@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './views/Home.vue'
 import FamilyTree from './views/FamilyTree.vue'
@@ -7,24 +7,12 @@ import Stories from './views/Stories.vue'
 import './style.css'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/family-tree',
-      name: 'FamilyTree',
-      component: FamilyTree
-    },
-    {
-      path: '/stories',
-      name: 'Stories',
-      component: Stories
-    }
-  ]
+    history: createWebHashHistory(import.meta.env.BASE_URL),
+    routes: [
+      { path: '/', name: 'Home', component: Home },
+      { path: '/family-tree', name: 'FamilyTree', component: FamilyTree },
+      { path: '/stories', name: 'Stories', component: Stories }
+        ]
 })
 
 const app = createApp(App)
