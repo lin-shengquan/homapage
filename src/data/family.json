@@ -90,7 +90,7 @@
     "role": "子女",
     "occupation": "初中生",
     "hobbies": ["编程", "游戏", "篮球"],
-    "avatar": "/image/me.jpg",
+    "avatar": "image/me.jpg",
     "parentId": "father",
     "spouseId": null,
     "description": "十七岁，思维灵活喜欢钻研新鲜事物，性格开朗外向，动静结合，空闲时间既爱钻研代码，也喜欢约好友出门打球放松。"
