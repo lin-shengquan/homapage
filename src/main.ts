@@ -6,9 +6,8 @@ import FamilyTree from './views/FamilyTree.vue'
 import Stories from './views/Stories.vue'
 import './style.css'
 
-// 路由配置
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -28,7 +27,6 @@ const router = createRouter({
   ]
 })
 
-// 创建应用
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
