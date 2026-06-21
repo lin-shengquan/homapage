@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌收集合成游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 顶部状态栏 -->
+    <header class="header">
+        <div class="gold-display">
+            <span class="gold-icon">💰</span>
+            <span id="gold-count" class="gold-count">0</span>
+            <span class="gold-per-second">+0/s</span>
+        </div>
+        <button id="reset-btn" class="reset-btn">重置</button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 导航标签 -->
+        <nav class="tabs">
+            <button class="tab active" data-tab="blind-box">盲盒抽取</button>
+            <button class="tab" data-tab="collection">收藏图鉴</button>
+        </nav>
+
+        <!-- 盲盒抽取页面 -->
+        <section id="blind-box" class="tab-content active">
+            <div class="blind-box-section">
+                <h2>盲盒抽取</h2>
+                <p class="section-desc">消耗金币购买盲盒，随机获得稀有卡牌</p>
+                
+                <!-- 盲盒商店 -->
+                <div class="blind-box-shop">
+                    <div class="blind-box-item" data-cost="100" data-series="all">
+                        <div class="box-icon">📦</div>
+                        <h3>普通盲盒</h3>
+                        <p>100 金币</p>
+                        <button class="buy-btn">购买</button>
+                    </div>
+                    <div class="blind-box-item" data-cost="500" data-series="all">
+                        <div class="box-icon">🎁</div>
+                        <h3>高级盲盒</h3>
+                        <p>500 金币</p>
+                        <button class="buy-btn">购买</button>
+                    </div>
+                    <div class="blind-box-item" data-cost="2000" data-series="all">
+                        <div class="box-icon">💎</div>
+                        <h3>传奇盲盒</h3>
+                        <p>2000 金币</p>
+                        <button class="buy-btn">购买</button>
+                    </div>
+                </div>
+
+                <!-- 开盒动画区域 -->
+                <div id="open-box-area" class="open-box-area">
+                    <div id="card-reveal" class="card-reveal hidden">
+                        <div class="card-container">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <span class="card-back-icon">❓</span>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-emoji"></div>
+                                    <div class="card-title"></div>
+                                    <div class="card-rarity-badge"></div>
+                                    <div class="card-series"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="obtain-message" class="obtain-message"></p>
+                    </div>
+                </div>
+
+                <!-- 我的卡牌列表 -->
+                <div class="my-cards-section">
+                    <h3>我的卡牌</h3>
+                    <div id="my-cards" class="cards-grid">
+                        <!-- 卡牌动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 收藏图鉴页面 -->
+        <section id="collection" class="tab-content">
+            <div class="collection-section">
+                <h2>收藏图鉴</h2>
+                
+                <!-- 系列选择 -->
+                <div class="series-tabs">
+                    <button class="series-tab active" data-series="all">全部</button>
+                    <button class="series-tab" data-series="fire">🔥 火系</button>
+                    <button class="series-tab" data-series="water">💧 水系</button>
+                    <button class="series-tab" data-series="earth">🌍 土系</button>
+                    <button class="series-tab" data-series="wind">🌪️ 风系</button>
+                    <button class="series-tab" data-series="zodiac">🐲 生肖</button>
+                </div>
+
+                <!-- 收集进度 -->
+                <div class="progress-section">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <p id="progress-text" class="progress-text">收集进度: 0/0 (0%)</p>
+                </div>
+
+                <!-- 成就提示 -->
+                <div id="achievement-popup" class="achievement-popup hidden">
+                    <div class="achievement-content">
+                        <span class="achievement-icon">🎉</span>
+                        <p class="achievement-title">成就达成！</p>
+                        <p class="achievement-desc"></p>
+                    </div>
+                </div>
+
+                <!-- 图鉴卡牌列表 -->
+                <div id="collection-cards" class="cards-grid">
+                    <!-- 图鉴卡牌动态生成 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 合成弹窗 -->
+    <div id="merge-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>卡牌合成</h3>
+            <p>选择两张相同的卡牌进行合成升级</p>
+            <div class="merge-selection">
+                <div id="merge-card1" class="merge-card-slot"></div>
+                <span class="merge-arrow">→</span>
+                <div id="merge-card2" class="merge-card-slot"></div>
+                <span class="merge-plus">+</span>
+            </div>
+            <button id="merge-btn" class="merge-btn" disabled>合成</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
